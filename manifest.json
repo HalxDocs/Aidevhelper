@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "AI Dev Helper (Hybrid Sidebar)",
+  "description": "A full AI coding assistant in your browser with hybrid offline + online AI, sidebar UI, code tools, and chat.",
+  "version": "1.0.0",
+
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "action": {
+    "default_title": "AI Dev Helper",
+    "default_popup": "popup/popup.html"
+  },
+
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "sidebar/sidebar.html",
+        "sidebar/sidebar.css",
+        "assets/*"
+      ],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ]
+}

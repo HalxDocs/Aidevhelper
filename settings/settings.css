@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background: #111;
+    color: #fff;
+    font-family: Arial;
+}
+
+#settings-container {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 180px;
+    background: #222;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-btn {
+    background: #333;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+#apiKeyInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+}
+
+.btn-row {
+    display: flex;
+    margin-top: 12px;
+    gap: 10px;
+}
+
+button {
+    background: #0a84ff;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#history-list {
+    background: #222;
+    padding: 10px;
+    border-radius: 6px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.history-entry {
+    border-bottom: 1px solid #444;
+    padding: 8px 0;
+    white-space: pre-wrap;
+}

@@ -1,0 +1,6 @@
+#ai-bubble {
+    box-shadow: 0 0 12px rgba(255, 255, 255, .2);
+}
+#ai-bubble:hover {
+    box-shadow: 0 0 22px rgba(255, 255, 255, .3);
+}

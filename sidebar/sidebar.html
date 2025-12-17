@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>AI Dev Helper</title>
+    <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+
+<div id="sidebar-container">
+
+    <div id="sidebar-header">
+        <h2>AI Dev Helper</h2>
+        <button id="close-btn">✖</button>
+    </div>
+
+    <div id="tools">
+        <button class="tool-btn" data-action="explain">Explain</button>
+        <button class="tool-btn" data-action="fix">Fix</button>
+        <button class="tool-btn" data-action="rewrite">Rewrite</button>
+        <button class="tool-btn" data-action="optimize">Optimize</button>
+    </div>
+
+    <div id="output">
+        <pre id="output-text">Waiting for input…</pre>
+    </div>
+
+    <div id="chat-box">
+        <input id="chat-input" placeholder="Ask anything…" />
+        <button id="send-btn">Send</button>
+    </div>
+
+</div>
+
+<script src="sidebar.js"></script>
+</body>
+</html>

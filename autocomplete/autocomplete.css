@@ -1,0 +1,12 @@
+/* not required but prepared for later UI */
+.ai-autocomplete-popup {
+    background: #1f1f1f;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}

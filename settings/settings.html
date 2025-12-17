@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>AI Dev Helper – Settings</title>
+    <link rel="stylesheet" href="settings.css" />
+</head>
+
+<body>
+
+<div id="settings-container">
+
+    <!-- LEFT NAVIGATION -->
+    <div id="sidebar">
+        <h2>Settings</h2>
+        <button class="nav-btn" data-section="api">API Keys</button>
+        <button class="nav-btn" data-section="theme">Theme</button>
+        <button class="nav-btn" data-section="history">History</button>
+        <button class="nav-btn" data-section="models">Local Models</button>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div id="content">
+
+        <!-- API SECTION -->
+        <div class="section" id="section-api">
+            <h2>AI Provider</h2>
+
+            <label>Choose Provider</label>
+            <select id="provider">
+                <option value="openai">OpenAI</option>
+                <option value="deepseek">DeepSeek</option>
+                <option value="gemini">Google Gemini</option>
+                <option value="claude">Anthropic Claude</option>
+                <option value="groq">Groq</option>
+            </select>
+
+            <h3 style="margin-top:20px;">API Key</h3>
+            <input id="apiKeyInput" placeholder="Enter your API key..."/>
+
+            <div class="btn-row">
+                <button id="saveApiKey">Save</button>
+                <button id="testApiKey">Test Key</button>
+            </div>
+
+            <p id="api-status"></p>
+        </div>
+
+        <!-- THEME -->
+        <div class="section" id="section-theme">
+            <h2>Theme</h2>
+            <button id="themeToggle">Toggle Theme</button>
+            <p id="theme-status"></p>
+        </div>
+
+        <!-- HISTORY -->
+        <div class="section" id="section-history">
+            <h2>History</h2>
+            <div id="history-list"></div>
+            <button id="clearHistory">Clear</button>
+        </div>
+
+        <!-- LOCAL MODEL -->
+        <div class="section" id="section-models">
+            <h2>Local LLM</h2>
+            <button id="loadLLM">Load Local Model</button>
+            <p id="llm-status"></p>
+        </div>
+
+    </div>
+</div>
+
+<script src="settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+#snippet-panel {
+  padding: 10px;
+  font-family: Consolas;
+}
+
+.snippet-item {
+  background: #2d2d2d;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
